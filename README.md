@@ -69,6 +69,8 @@ const filmes = [
 //enum 4
 function filmesDeAcaoOuFiccao() {
     return filmes.filter(filme=> {
-        return filme.generos.includes("Ação") || filme.generos.includes("Ficção Cientifica");
+        return filme.generos.includes("Ação") || filme.generos.includes("Ficção Científica");
     });
 }
+const filmesAcaoOuFiccao = filmesDeAcaoOuFiccao();
+console.log(filmesAcaoOuFiccao);
